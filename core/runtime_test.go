@@ -58,6 +58,10 @@ var testSets = []struct {
 	{"spineboy-pro.json", "spineboy-pro.skel", "spineboy-pma.atlas"},
 	{"raptor-pro.json", "raptor-pro.skel", "raptor-pma.atlas"},
 	{"coin-pro.json", "coin-pro.skel", "coin-pma.atlas"},
+	// Physics constraints (4.2) and heavy deform/clipping content.
+	{"celestial-circus-pro.json", "celestial-circus-pro.skel", "celestial-circus-pma.atlas"},
+	// Skins, linked meshes and sequences.
+	{"mix-and-match-pro.json", "mix-and-match-pro.skel", "mix-and-match-pma.atlas"},
 }
 
 func TestLoadJSON(t *testing.T) {
