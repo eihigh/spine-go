@@ -22,8 +22,10 @@ type TextureRegion struct {
 	// spans (Height x Width) pixels.
 	U, V, U2, V2 float32
 
-	// Width and Height are the packed dimensions of the region in pixels,
-	// excluding rotation (packedWidth/packedHeight in libgdx terms).
+	// Width and Height are the packed dimensions of the region in pixels
+	// (packedWidth/packedHeight in the reference runtimes). For a region
+	// rotated 90 degrees they are swapped relative to the atlas file's size
+	// entry, i.e. Width is always the on-page horizontal span.
 	Width, Height float32
 
 	// Degrees is the number of degrees the region has been rotated on the
