@@ -15,8 +15,8 @@ const (
 	epsilon = 0.00001
 )
 
-func cos(radians float32) float32  { return float32(math.Cos(float64(radians))) }
-func sin(radians float32) float32  { return float32(math.Sin(float64(radians))) }
+func cos(radians float32) float32    { return float32(math.Cos(float64(radians))) }
+func sin(radians float32) float32    { return float32(math.Sin(float64(radians))) }
 func cosDeg(degrees float32) float32 { return float32(math.Cos(float64(degrees * degRad))) }
 func sinDeg(degrees float32) float32 { return float32(math.Sin(float64(degrees * degRad))) }
 
@@ -27,7 +27,7 @@ func sqrt(x float32) float32 { return float32(math.Sqrt(float64(x))) }
 
 // mod32 is Java's % operator for floats (truncated remainder).
 func mod32(x, y float32) float32 { return float32(math.Mod(float64(x), float64(y))) }
-func pow(x, y float32) float32 { return float32(math.Pow(float64(x), float64(y))) }
+func pow(x, y float32) float32   { return float32(math.Pow(float64(x), float64(y))) }
 
 func abs(x float32) float32 {
 	if x < 0 {

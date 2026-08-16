@@ -3,13 +3,13 @@ package spine
 // EventData stores the setup pose values for an Event.
 type EventData struct {
 	// Name is unique across all events in the skeleton.
-	Name        string
-	Int         int
-	Float       float32
-	String      string
-	AudioPath   string
-	Volume      float32
-	Balance     float32
+	Name      string
+	Int       int
+	Float     float32
+	String    string
+	AudioPath string
+	Volume    float32
+	Balance   float32
 }
 
 // NewEventData creates event setup pose data.
